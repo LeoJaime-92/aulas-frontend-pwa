@@ -3,5 +3,8 @@
     width: 40px;
     border-radius: 50px;
     background-color: var(--cor-sucesso);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }

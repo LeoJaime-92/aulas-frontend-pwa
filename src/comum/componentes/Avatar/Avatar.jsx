@@ -1,8 +1,10 @@
 import "./Avatar.css";
 
 const Avatar = (props) => {
+      const [primeiroNome, segundoNome] = props.nome.split(" ")
+
      return <div className="avatar_root">
-           {props.nome}
+           {primeiroNome[0] + segundoNome[0]}
      </div>;
 }
 

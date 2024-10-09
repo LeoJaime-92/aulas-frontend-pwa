@@ -6,7 +6,14 @@ function Principal() {
 
     <main className='principal_root'>
       Principal
-      <BotaoCustomizado>salvar</BotaoCustomizado>
+      <BotaoCustomizado cor='primaria' aoClicar={() => alert("funcionou")}>
+        Botão Primário </BotaoCustomizado>
+
+        <BotaoCustomizado cor='secundaria'aoClicar={() => alert("funcionou")}>
+        Botão Secundario </BotaoCustomizado>
+
+        <BotaoCustomizado aoClicar={() => alert("funcionou")}>
+        Botão Padrão </BotaoCustomizado>
 
     </main>);
 
