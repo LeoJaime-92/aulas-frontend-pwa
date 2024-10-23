@@ -1,23 +1,19 @@
-import BotaoCustomizado from '../BotaoCustomizado/BotaoCustomizado';
-import './Principal.css';
-
-function Principal() {
+import { Link } from "react-router-dom";
+import "./Principal.css";
+import { GrReturn } from "react-icons/gr";
+function Principal({ voltarPara, titulo, children }) {
   return (
+    <main className="principal_root">
+      <div className="principal_titulo">
+        {voltarPara && (
+          <Link to={voltarPara}>{<GrReturn color="blue" size={40} />}</Link>
+        )}
+        <h1>{titulo}</h1>
+      </div>
 
-    <main className='principal_root'>
-      Principal
-      <BotaoCustomizado cor='primaria' aoClicar={() => alert("funcionou")}>
-        Botão Primário </BotaoCustomizado>
-
-        <BotaoCustomizado cor='secundaria'aoClicar={() => alert("funcionou")}>
-        Botão Secundario </BotaoCustomizado>
-
-        <BotaoCustomizado aoClicar={() => alert("funcionou")}>
-        Botão Padrão </BotaoCustomizado>
-
-    </main>);
-
+      {children}
+    </main>
+  );
 }
-
 
 export default Principal;

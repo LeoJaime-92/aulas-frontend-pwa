@@ -4,6 +4,9 @@
 
     font-size: 14px;
     opacity: 0.8;
+    cursor: pointer;
+    color: var(--cor-texto-claro);
+    font-weight: 400;
 }
 
 .botao-customizado_root:hover{
@@ -19,5 +22,5 @@ background-color: var(--cor-primaria);
 }
 
 .botao-customizado_padrao{
-    background-color: var(#d76d6d);
+    background-color: var(--cor-cinza);
 }
