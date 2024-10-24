@@ -7,7 +7,8 @@ const MostrarSoma = () => {
     <>
       <div className="MostrarSoma">
         {" "}
-        A soma de {numeroum} + {numerodois} = {resultado}
+        A soma de dfdfdfdf
+        {numeroum} + {numerodois} = {resultado}
       </div>
     </>
   );
